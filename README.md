@@ -1,4 +1,5 @@
 
+# Run
 To run the example:
 
 ```shell
@@ -8,16 +9,23 @@ cmake --build build -j 10 -- install
 export LD_LIBRARY_PATH=$PWD/install/lib:$LD_LIBRARY_PATH
 python3 simple.py
 ```
+# To check the ouptut
 
-To check the ouptut, open the root file like `root sim.root ` and scan the position of the hits, if any
+open the root file like `root sim.root ` and scan the position of the hits, if any
 ```cpp
 EVENT->Scan("MYDETECTOR_HITS.position.Y():MYDETECTOR_HITS.position.X()"
 ```
 
 If simulation was ok, a table of aroudn 20 photon hits should be displayed. Otherwise, empty table or 1 hit (the charged particle) will be shown.
 
+# Error msg from DD4hep
 
-Notes:
+The output is saved into `dd4hep_error_msg.txt` using this command
+```
+python3 simple.py --runType batch > dd4hep_error_msg.txt 2>&1
+```
+
+# Notes:
 example DD4hep(from G4), opnovice: https://github.com/AIDASoft/DD4hep/blob/9bbe12b080ce52615251facc6f6ff5dd58a60e69/examples/OpticalSurfaces/src/OpNovice_geo.cpp
 https://github.com/AIDASoft/DD4hep/blob/9bbe12b080ce52615251facc6f6ff5dd58a60e69/examples/OpticalSurfaces/scripts/OpNovice.py
 

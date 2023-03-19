@@ -1,0 +1,2307 @@
+Info in <TGeoManager::TGeoManager>: Geometry default, Detector Geometry created
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+PersistencyIO    INFO  +++ Set Streamer to dd4hep::OpaqueDataBlock
+XMLLoader        INFO  +++ Processing XML file: file:./compact/simple_detector.xml
+DocumentHandler  INFO  +++ Loading document URI: file:./compact/simple_detector.xml [Resolved:'./compact/simple_detector.xml']
+DocumentHandler  INFO  +++ Document file:./compact/simple_detector.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: ./compact/elements.xml [Resolved:'./compact/elements.xml']
+DocumentHandler  INFO  +++ Document ./compact/elements.xml succesfully parsed with TinyXML .....
+DD4hep           WARN  ++ STD conditions NOT defined by client. NTP defaults taken.
+DocumentHandler  INFO  +++ Loading document URI: ./compact/materials.xml [Resolved:'./compact/materials.xml']
+DocumentHandler  INFO  +++ Document ./compact/materials.xml succesfully parsed with TinyXML .....
+DocumentHandler  INFO  +++ Loading document URI: ./compact/materials.xml [Resolved:'./compact/materials.xml']
+DocumentHandler  INFO  +++ Document ./compact/materials.xml succesfully parsed with TinyXML .....
+Info in <TGeoManager::SetTopVolume>: Top volume is world_volume. Master volume is world_volume
+Detector         INFO  *********** Created World volume with size:   30   30   30
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 2, max placements = 1
+Info in <TGeoManager::CloseGeometry>: 3 nodes/ 4 volume UID's in Detector Geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+Compact          INFO  ++ Converted subdetector:SimpleDetector of type MYDETECTOR [tracker]
+Detector         INFO  +++ Patching names of anonymous shapes....
+DDG4             INFO +++ Imported 5 global values to namespace:DDG4
+Geant4Kernel           OutputLevel:  2
+Geant4Kernel           UI:           UI
+Geant4Kernel           NumEvents:    10
+DDG4             INFO +++  List of sensitive detectors:
+Geant4Kernel           NumThreads:   0
+DDG4             INFO +++  SimpleDetector                   type:tracker       --> Sensitive type: ('Geant4TrackerWeightedAction', {'HitPositionCombination': 2, 'CollectSingleDeposits': False})
+Geant4UI         INFO  +++ UI> Install Geant4 control directory:/ddg4/UI/
+Geant4Kernel     INFO  ++ Registered global action UI of type dd4hep::sim::Geant4UIManager
+Geant4UI         INFO  +++ MagFieldTrackingSetup> Install Geant4 control directory:/ddg4/MagFieldTrackingSetup/
+Geant4Kernel     INFO  ++ Registered global action RunInit of type dd4hep::sim::Test::Geant4TestRunAction
+DDSim.Helper.Random INFO Choosing random seed for you: 2010532269
+Geant4UI         INFO  +++ RunAction> Install Geant4 control directory:/ddg4/RunAction/
+Geant4UI         INFO  +++ RootOutput> Install Geant4 control directory:/ddg4/RootOutput/
+DDSim            INFO ++++ Adding DD4hep Particle Gun ++++
+DDSim            INFO Enabling the PrimaryHandler
+Geant4UI         INFO  +++ EventAction> Install Geant4 control directory:/ddg4/EventAction/
+Geant4UI         INFO  +++ GeneratorAction> Install Geant4 control directory:/ddg4/GeneratorAction/
+Geant4UI         INFO  +++ Gun> Install Geant4 control directory:/ddg4/Gun/
+Geant4UI         INFO  +++ InteractionMerger> Install Geant4 control directory:/ddg4/InteractionMerger/
+Geant4UI         INFO  +++ PrimaryHandler> Install Geant4 control directory:/ddg4/PrimaryHandler/
+Geant4UI         INFO  +++ TrackingAction> Install Geant4 control directory:/ddg4/TrackingAction/
+Geant4UI         INFO  +++ SteppingAction> Install Geant4 control directory:/ddg4/SteppingAction/
+DDSim.Helper.Filter INFO ReqFilt {'opticalphotons', 'edep0'}
+DDSim            INFO getDetectorLists - found active detector SimpleDetector type: tracker
+DDSim            INFO Setting up SD for SimpleDetector
+Geant4UI         INFO  +++ ParticleHandler> Install Geant4 control directory:/ddg4/ParticleHandler/
+Geant4UI         INFO  +++ SimpleDetector> Install Geant4 control directory:/ddg4/SimpleDetector/
+DDSim.Helper.Filter INFO Adding default filter 'edep0' to sensitive detector for 'SimpleDetector' 
+Geant4UI         INFO  +++ SimpleDetectorHandler> Install Geant4 control directory:/ddg4/SimpleDetectorHandler/
+Geant4UI         INFO  +++ PhysicsList> Install Geant4 control directory:/ddg4/PhysicsList/
+PhysicsList            +++ Dump of physics list component(s)
+PhysicsList            +++ Extension name       FTFP_BERT
+PhysicsList            +++ Transportation flag: 0
+PhysicsList            +++ Program decays:      0
+PhysicsList            +++ RangeCut:            0.700000
+Geant4UI         INFO  +++ GlobalRangeCut> Install Geant4 control directory:/ddg4/GlobalRangeCut/
+Geant4UI         INFO  +++ CerenkovPhys> Install Geant4 control directory:/ddg4/CerenkovPhys/
+Geant4UI         INFO  +++ OpticalGammaPhys> Install Geant4 control directory:/ddg4/OpticalGammaPhys/
+FieldSetup       INFO  Geant4 magnetic field tracking configured.
+FieldSetup       INFO  G4MagIntegratorStepper:ClassicalRK4 G4Mag_EqRhs:Mag_UsualEqRhs
+FieldSetup       INFO  Epsilon:[min:0.000050 mm max:0.001000 mm]
+FieldSetup       INFO  Delta:[chord:0.250000 1-step:0.010000 intersect:0.001000] LargestStep 10000.000000 mm
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-02 [MT]   (25-May-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+Geant4UI         INFO  +++ Geant4RunManager> Install Geant4 control directory:/ddg4/Geant4RunManager/
+Geant4RunManager WARN  +++ Configured run manager of type: G4RunManager.
+Geant4Kernel     WARN  +++ Multi-threaded mode requested, but not supported by this compilation of Geant4.
+Geant4Kernel     WARN  +++ Falling back to single threaded mode.
+Geant4Exec       WARN  +++ Only 1 subdetectors present. You sure you loaded the geometry properly?
+Geant4UI         INFO  +++ DetectorConstructionAction> Install Geant4 control directory:/ddg4/DetectorConstructionAction/
+Geant4Exec       WARN  +++ Building default Geant4DetectorConstruction for single threaded compatibility.
+G4PhysListFactory::GetReferencePhysList <FTFP_BERT>  EMoption= 0
+<<< Geant4 Physics List simulation engine: FTFP_BERT
+
+
+Myphysics        INFO  Registered Geant4 physics constructor G4StepLimiterPhysics to physics list
+UserInitialization INFO  +++ Executing Geant4UserActionInitialization::Build. Context:0x5571feec27c0 Kernel:0x5571f8ad2a30 [-1]
+Geant4Converter  INFO  +++  Successfully converted geometry to Geant4.
+Geant4UI         INFO  +++ ConstructGeometry> Install Geant4 control directory:/ddg4/ConstructGeometry/
+
+ hInelastic FTFP_BERT : threshold between BERT and FTFP is over the interval 
+ for pions :   3 to 6 GeV
+ for kaons :   3 to 6 GeV
+ for proton :  3 to 6 GeV
+ for neutron : 3 to 6 GeV
+
+### Adding tracking cuts for neutron  TimeCut(ns)= 10000  KinEnergyCut(MeV)= 0
+GlobalRangeCut   INFO  +++ Set PhysicsList RangeCut to 0.700000 mm
+CerenkovPhys     INFO  +++ Constructing: maxNumPhotonsPerStep:10 maxBeta:10.000000 track secondaries:NO  stack photons:YES track secondaries:NO 
+OpticalGammaPhys INFO  +++ Constructing optical_photon processes:
+OpticalGammaPhys INFO  +++              G4OpAbsorption G4OpRayleigh G4OpMieHG G4OpBoundaryProcess
+UI               INFO  ++ Start run with 1 events.
+=======================================================================
+======                 Electromagnetic Physics Parameters      ========
+=======================================================================
+LPM effect enabled                                 1
+Enable creation and use of sampling tables         0
+Apply cuts on all EM processes                     0
+Use general process                                0
+Enable linear polarisation for gamma               0
+Enable sampling of quantum entanglement            0
+X-section factor for integral approach             0.8
+Min kinetic energy for tables                      100 eV 
+Max kinetic energy for tables                      100 TeV
+Number of bins per decade of a table               7
+Verbose level                                      1
+Verbose level for worker thread                    0
+Bremsstrahlung energy threshold above which 
+  primary e+- is added to the list of secondary    100 TeV
+Bremsstrahlung energy threshold above which primary
+  muon/hadron is added to the list of secondary    100 TeV
+Lowest triplet kinetic energy                      1 MeV
+Enable sampling of gamma linear polarisation       0
+5D gamma conversion model type                     0
+5D gamma conversion model on isolated ion          0
+Livermore data directory                           livermore
+=======================================================================
+======                 Ionisation Parameters                   ========
+=======================================================================
+Step function for e+-                              (0.2, 1 mm)
+Step function for muons/hadrons                    (0.2, 0.1 mm)
+Step function for light ions                       (0.2, 0.1 mm)
+Step function for general ions                     (0.2, 0.1 mm)
+Lowest e+e- kinetic energy                         1 keV
+Lowest muon/hadron kinetic energy                  1 keV
+Fluctuations of dE/dx are enabled                  1
+Use ICRU90 data                                    0
+Use built-in Birks satuaration                     0
+Build CSDA range enabled                           0
+Use cut as a final range enabled                   0
+Enable angular generator interface                 0
+Max kinetic energy for CSDA tables                 1 GeV
+Max kinetic energy for NIEL computation            0 eV 
+Linear loss limit                                  0.01
+Read data from file for e+e- pair production by mu 0
+=======================================================================
+======                 Multiple Scattering Parameters          ========
+=======================================================================
+Type of msc step limit algorithm for e+-           1
+Type of msc step limit algorithm for muons/hadrons 0
+Msc lateral displacement for e+- enabled           1
+Msc lateral displacement for muons and hadrons     0
+Urban msc model lateral displacement alg96         1
+Range factor for msc step limit for e+-            0.04
+Range factor for msc step limit for muons/hadrons  0.2
+Geometry factor for msc step limitation of e+-     2.5
+Safety factor for msc step limit for e+-           0.6
+Skin parameter for msc step limitation of e+-      1
+Lambda limit for msc step limit for e+-            1 mm
+Use Mott correction for e- scattering              0
+Factor used for dynamic computation of angular 
+  limit between single and multiple scattering     1
+Fixed angular limit between single 
+  and multiple scattering                          3.1416 rad
+Upper energy limit for e+- multiple scattering     100 MeV
+Type of electron single scattering model           0
+Type of nuclear form-factor                        1
+Screening factor                                   1
+=======================================================================
+
+phot:  for gamma SubType=12 BuildTable=0
+      LambdaPrime table from 200 keV to 100 TeV in 61 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+ LivermorePhElectric : Emin=    0 eV  Emax=  100 TeV  SauterGavrila Fluo
+
+compt:  for gamma SubType=13 BuildTable=1
+      Lambda table from 100 eV  to 1 MeV, 7 bins/decade, spline: 1
+      LambdaPrime table from 1 MeV to 100 TeV in 56 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina : Emin=    0 eV  Emax=  100 TeV
+
+conv:  for gamma SubType=14 BuildTable=1
+      Lambda table from 1.022 MeV to 100 TeV, 18 bins/decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+     BetheHeitlerLPM : Emin=    0 eV  Emax=  100 TeV  ModifiedTsai
+
+Rayl:  for gamma SubType=11 BuildTable=1
+      Lambda table from 100 eV  to 100 keV, 7 bins/decade, spline: 0
+      LambdaPrime table from 100 keV to 100 TeV in 63 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+   LivermoreRayleigh : Emin=    0 eV  Emax=  100 TeV  CullenGenerator
+
+msc:  for e-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e-  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+CoulombScat:  for e- XStype:1 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for e+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 MeV Nbins=42 100 eV  - 100 MeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+        WentzelVIUni : Emin=  100 MeV Emax=  100 TeV Nbins=42 100 MeV - 100 TeV
+          StepLim=UseSafety Rfact=0.04 Gfact=2.5 Sfact=0.6 DispFlag:1 Skin=1 Llim=1 mm
+
+eIoni:  for e+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha : Emin=    0 eV  Emax=  100 TeV
+
+eBrem:  for e+  XStype:4  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  VertexHighEnergyTh(GeV)= 100000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB : Emin=    0 eV  Emax=    1 GeV  ModifiedTsai
+            eBremLPM : Emin=    1 GeV Emax=  100 TeV  ModifiedTsai
+
+annihil:  for e+ XStype:2 SubType=5 BuildTable=0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg : Emin=    0 eV  Emax=  100 TeV
+
+CoulombScat:  for e+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from 100 MeV to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=  100 MeV Emax=  100 TeV
+
+msc:  for proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for proton XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for GenericIon  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for GenericIon  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      Stopping Power data for 17 ion/material pairs
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+msc:  for alpha  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc : Emin=    0 eV  Emax=  100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+ionIoni:  for alpha  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon : Emin=    0 eV  Emax=7.9452 MeV
+          BetheBloch : Emin=7.9452 MeV Emax=  100 TeV
+
+msc:  for anti_proton  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for anti_proton  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=    2 MeV
+          BetheBloch : Emin=    2 MeV Emax=  100 TeV
+
+hBrems:  for anti_proton  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for anti_proton  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 17x1001; from 7.50618 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for anti_proton XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for kaon-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for kaon-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=1.05231 MeV
+          BetheBloch : Emin=1.05231 MeV Emax=  100 TeV
+
+hBrems:  for kaon-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for kaon-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 18x1001; from 3.94942 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for kaon- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of kaon+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for mu-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+muIoni:  for mu-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=  200 keV
+          BetheBloch : Emin=  200 keV Emax=    1 GeV
+        MuBetheBloch : Emin=    1 GeV Emax=  100 TeV
+
+muBrems:  for mu-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+muPairProd:  for mu-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 21x1001; from 1 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for mu- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of mu+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi+  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi+  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi+  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi+  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi+ XStype:1 SubType=1 BuildTable=1
+      Lambda table from threshold  to 100 TeV, 7 bins/decade, spline: 0
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+msc:  for pi-  SubType= 10
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni : Emin=    0 eV  Emax=  100 TeV Nbins=84 100 eV  - 100 TeV
+          StepLim=Minimal Rfact=0.2 Gfact=2.5 Sfact=0.6 DispFlag:0 Skin=1 Llim=1 mm
+
+hIoni:  for pi-  XStype:1  SubType=2
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 1
+      StepFunction=(0.2, 0.1 mm), integ: 1, fluct: 1, linLossLim= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO : Emin=    0 eV  Emax=297.505 keV
+          BetheBloch : Emin=297.505 keV Emax=  100 TeV
+
+hBrems:  for pi-  XStype:1  SubType=3
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+hPairProd:  for pi-  XStype:1  SubType=4
+      dE/dx and range tables from 100 eV  to 100 TeV in 84 bins
+      Lambda tables from threshold to 100 TeV, 7 bins/decade, spline: 0
+      Sampling table 20x1001; from 1.11656 GeV to 100 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd : Emin=    0 eV  Emax=  100 TeV  ModifiedMephi
+
+CoulombScat:  for pi- XStype:1 SubType=1 BuildTable=1
+      Used Lambda table of pi+
+      ThetaMin(p) < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering : Emin=    0 eV  Emax=  100 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for neutron
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronElasticXS: 0 eV  ---> 100 TeV
+
+  Process: neutronInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:      G4NeutronInelasticXS: 0 eV  ---> 100 TeV
+
+  Process: nCapture
+        Model:               nRadCapture: 0 eV  ---> 100 TeV
+     Cr_sctns:        G4NeutronCaptureXS: 0 eV  ---> 100 TeV
+
+  Process: nKiller
+
+---------------------------------------------------
+                           Hadronic Processes for B-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: B-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for D-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: D-Inelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for GenericIon
+
+  Process: ionInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: He3Inelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: alphaInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for anti_He3
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_He3Inelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_alpha
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_alphaInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_deuteronInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: anti_lambdaInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_neutron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_neutronInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_proton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100.1 MeV
+        Model:              AntiAElastic: 100 MeV ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_protonInelastic
+        Model:                      FTFP: 0 eV  ---> 100 TeV
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for anti_triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100.1 MeV/n
+        Model:              AntiAElastic: 100 MeV/n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: anti_tritonInelastic
+        Model:                      FTFP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:              AntiAGlauber: 0 eV  ---> 25.6 PeV
+
+  Process: hFritiofCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for deuteron
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: dInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+---------------------------------------------------
+                           Hadronic Processes for e+
+
+  Process: positronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for e-
+
+  Process: electronNuclear
+        Model:   G4ElectroVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:          ElectroNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for gamma
+
+  Process: photonNuclear
+        Model:               GammaNPreco: 0 eV  ---> 200 MeV
+        Model:            BertiniCascade: 199 MeV ---> 6 GeV
+        Model:           TheoFSGenerator: 3 GeV ---> 100 TeV
+     Cr_sctns:            GammaNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon+
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for kaon-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: kaon-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for lambda
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: lambdaInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu+
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muonNuclear
+        Model:      G4MuonVDNuclearModel: 0 eV  ---> 1 PeV
+     Cr_sctns:     KokoulinMuonNuclearXS: 0 eV  ---> 100 TeV
+
+  Process: muMinusCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for pi+
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi+Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for pi-
+
+  Process: hadElastic
+        Model:           hElasticGlauber: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: pi-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for proton
+
+  Process: hadElastic
+        Model:             hElasticCHIPS: 0 eV  ---> 100 TeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+  Process: protonInelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:  BarashenkovGlauberGribov: 0 eV  ---> 100 TeV
+
+---------------------------------------------------
+                           Hadronic Processes for sigma-
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV  ---> 100 TeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: sigma-Inelastic
+        Model:                      FTFP: 3 GeV ---> 100 TeV
+        Model:            BertiniCascade: 0 eV  ---> 6 GeV
+     Cr_sctns:            Glauber-Gribov: 0 eV  ---> 100 TeV
+
+  Process: hBertiniCaptureAtRest
+
+---------------------------------------------------
+                           Hadronic Processes for triton
+
+  Process: hadElastic
+        Model:              hElasticLHEP: 0 eV /n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+  Process: tInelastic
+        Model:  Binary Light Ion Cascade: 0 eV /n ---> 6 GeV/n
+        Model:                      FTFP: 3 GeV/n ---> 100 TeV/n
+     Cr_sctns:  Glauber-Gribov Nucl-nucl: 0 eV  ---> 25.6 PeV
+
+================================================================
+=======================================================================
+======       Pre-compound/De-excitation Physics Parameters     ========
+=======================================================================
+Type of pre-compound inverse x-section              3
+Pre-compound model active                           1
+Pre-compound excitation low energy (MeV)            0.1
+Pre-compound excitation high energy (MeV)           30
+Type of de-excitation inverse x-section             3
+Type of de-excitation factory                       Evaporation+GEM
+Number of de-excitation channels                    68
+Min excitation energy (keV)                         0.01
+Min energy per nucleon for multifragmentation (MeV) 2e+05
+Limit excitation energy for Fermi BreakUp (MeV)     20
+Level density (1/MeV)                               0.075
+Use simple level density model                      1
+Use discrete excitation energy of the residual      0
+Time limit for long lived isomeres (ns)             1
+Isomer production flag                              1
+Internal e- conversion flag                         1
+Store e- internal conversion data                   0
+Correlated gamma emission flag                      0
+Max 2J for sampling of angular correlations         10
+=======================================================================
+GenerationInit   INFO  +++ Initializing event 1. Within run:0 event 1.
+Gun              INFO  Shoot [0] [5.000 , 5.000] GeV pi+ pos:(0.000 0.000 0.000)[mm] dir:( 0.000  0.000  1.000)
+Gun              INFO  Particle [0] pi+          Mom:5.000 GeV vertex:( 0.000  0.000  0.000)[mm] direction:( 0.000  0.000  1.000)
+Gun              INFO  +-> Interaction [0] [5.000 , 5.000] GeV pi+ pos:(0.000 0.000 0.000)[mm]
+Gun              INFO  +++   +-> ID:  0 pi+          status:00000002 PDG:   211 Vtx:(+0.00e+00,+0.00e+00,+0.00e+00)[mm] time: +0.00e+00 [ns] #Dau:  0 #Par:0      
+PrimaryHandler   INFO  +++++ G4PrimaryVertex at (+0.00e+00,+0.00e+00,+0.00e+00) [mm] +0.00e+00 [ns]
+ParticleHandler  INFO  +++ Event 0 Begin event action. Access event related information.
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043300958198758, y: -0.0058919354130617, z: 0.9990446997588
+   Total Momentum = 2.7048533713139e-09[GeV]
+   Momentum: 1.1712274276503e-10[GeV], y: -1.5936821365583e-11[GeV], z: 2.7022694242358e-09[GeV]
+   Total Energy   = 2.7048533713139e-09[GeV]
+   Kinetic Energy = 2.7048533713139e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043300958198758, y: -0.0058919354130617, z: 0.9990446997588
+   Total Momentum = 2.7048533713139e-09[GeV]
+   Momentum: 1.1712274276503e-10[GeV], y: -1.5936821365583e-11[GeV], z: 2.7022694242358e-09[GeV]
+   Total Energy   = 2.7048533713139e-09[GeV]
+   Kinetic Energy = 2.7048533713139e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043300958198758, y: -0.0058919354130617, z: 0.9990446997588
+   Total Momentum = 2.7048533713139e-09[GeV]
+   Momentum: 1.1712274276503e-10[GeV], y: -1.5936821365583e-11[GeV], z: 2.7022694242358e-09[GeV]
+   Total Energy   = 2.7048533713139e-09[GeV]
+   Kinetic Energy = 2.7048533713139e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043300958198758, y: -0.0058919354130617, z: 0.9990446997588
+   Total Momentum = 2.7048533713139e-09[GeV]
+   Momentum: 1.1712274276503e-10[GeV], y: -1.5936821365583e-11[GeV], z: 2.7022694242358e-09[GeV]
+   Total Energy   = 2.7048533713139e-09[GeV]
+   Kinetic Energy = 2.7048533713139e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 333.91869220744[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: world_volume_1
+ Old Momentum Direction: (0.043300958198758,-0.0058919354130617,0.9990446997588)
+ Old Polarization:       (0.98808131980568,-0.14760061632452,-0.043696264275994)
+ *** NoRINDEX ***
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.021951745723522, y: -0.037345957715438, z: 0.99906125953417
+   Total Momentum = 3.1645665513675e-09[GeV]
+   Momentum: 6.946776026078e-11[GeV], y: -1.1818376861506e-10[GeV], z: 3.1615958446889e-09[GeV]
+   Total Energy   = 3.1645665513675e-09[GeV]
+   Kinetic Energy = 3.1645665513675e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.021951745723522, y: -0.037345957715438, z: 0.99906125953417
+   Total Momentum = 3.1645665513675e-09[GeV]
+   Momentum: 6.946776026078e-11[GeV], y: -1.1818376861506e-10[GeV], z: 3.1615958446889e-09[GeV]
+   Total Energy   = 3.1645665513675e-09[GeV]
+   Kinetic Energy = 3.1645665513675e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.021951745723522, y: -0.037345957715438, z: 0.99906125953417
+   Total Momentum = 3.1645665513675e-09[GeV]
+   Momentum: 6.946776026078e-11[GeV], y: -1.1818376861506e-10[GeV], z: 3.1615958446889e-09[GeV]
+   Total Energy   = 3.1645665513675e-09[GeV]
+   Kinetic Energy = 3.1645665513675e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.021951745723522, y: -0.037345957715438, z: 0.99906125953417
+   Total Momentum = 3.1645665513675e-09[GeV]
+   Momentum: 6.946776026078e-11[GeV], y: -1.1818376861506e-10[GeV], z: 3.1615958446889e-09[GeV]
+   Total Energy   = 3.1645665513675e-09[GeV]
+   Kinetic Energy = 3.1645665513675e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 537.98046994942[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: world_volume_1
+ Old Momentum Direction: (0.021951745723522,-0.037345957715438,0.99906125953417)
+ Old Polarization:       (0.49070330370188,-0.87024954632215,-0.043312756344449)
+ *** NoRINDEX ***
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.02141757843106, y: 0.037005372349433, z: 0.99908552674505
+   Total Momentum = 1.9180168818748e-09[GeV]
+   Momentum: 4.1079276999652e-11[GeV], y: 7.0976928886277e-11[GeV], z: 1.9162629067338e-09[GeV]
+   Total Energy   = 1.9180168818748e-09[GeV]
+   Kinetic Energy = 1.9180168818748e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.02141757843106, y: 0.037005372349433, z: 0.99908552674505
+   Total Momentum = 1.9180168818748e-09[GeV]
+   Momentum: 4.1079276999652e-11[GeV], y: 7.0976928886277e-11[GeV], z: 1.9162629067338e-09[GeV]
+   Total Energy   = 1.9180168818748e-09[GeV]
+   Kinetic Energy = 1.9180168818748e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.02141757843106, y: 0.037005372349433, z: 0.99908552674505
+   Total Momentum = 1.9180168818748e-09[GeV]
+   Momentum: 4.1079276999652e-11[GeV], y: 7.0976928886277e-11[GeV], z: 1.9162629067338e-09[GeV]
+   Total Energy   = 1.9180168818748e-09[GeV]
+   Kinetic Energy = 1.9180168818748e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.02141757843106, y: 0.037005372349433, z: 0.99908552674505
+   Total Momentum = 1.9180168818748e-09[GeV]
+   Momentum: 4.1079276999652e-11[GeV], y: 7.0976928886277e-11[GeV], z: 1.9162629067338e-09[GeV]
+   Total Energy   = 1.9180168818748e-09[GeV]
+   Kinetic Energy = 1.9180168818748e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 217.14120951641[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.02141757843106,0.037005372349433,0.99908552674505)
+ Old Polarization:       (0.49988613440944,0.86503511095677,-0.042756396447632)
+ New Momentum Direction: (0.02141757843106,0.037005372349433,0.99908552674505)
+ New Polarization:       (0.49988613440944,0.86503511095677,-0.042756396447632)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 8.0733164351412e-05, y: -0.042542317303299, z: 0.99909466254235
+   Total Momentum = 1.9203127283155e-09[GeV]
+   Momentum: 1.550329231012e-13[GeV], y: -8.169455340956e-11[GeV], z: 1.9185741972721e-09[GeV]
+   Total Energy   = 1.9203127283155e-09[GeV]
+   Kinetic Energy = 1.9203127283155e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 8.0733164351412e-05, y: -0.042542317303299, z: 0.99909466254235
+   Total Momentum = 1.9203127283155e-09[GeV]
+   Momentum: 1.550329231012e-13[GeV], y: -8.169455340956e-11[GeV], z: 1.9185741972721e-09[GeV]
+   Total Energy   = 1.9203127283155e-09[GeV]
+   Kinetic Energy = 1.9203127283155e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 8.0733164351412e-05, y: -0.042542317303299, z: 0.99909466254235
+   Total Momentum = 1.9203127283155e-09[GeV]
+   Momentum: 1.550329231012e-13[GeV], y: -8.169455340956e-11[GeV], z: 1.9185741972721e-09[GeV]
+   Total Energy   = 1.9203127283155e-09[GeV]
+   Kinetic Energy = 1.9203127283155e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 8.0733164351412e-05, y: -0.042542317303299, z: 0.99909466254235
+   Total Momentum = 1.9203127283155e-09[GeV]
+   Momentum: 1.550329231012e-13[GeV], y: -8.169455340956e-11[GeV], z: 1.9185741972721e-09[GeV]
+   Total Energy   = 1.9203127283155e-09[GeV]
+   Kinetic Energy = 1.9203127283155e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 320.5624171908[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (8.0733164351412e-05,-0.042542317303299,0.99909466254235)
+ Old Polarization:       (-0.00012396799084259,-0.99909465854703,-0.042542307115777)
+ New Momentum Direction: (8.0733164351412e-05,-0.042542317303299,0.99909466254235)
+ New Polarization:       (-0.00012396799084259,-0.99909465854703,-0.042542307115777)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.034415602676097, y: -0.026304900231284, z: 0.99906136874381
+   Total Momentum = 2.8994933379992e-09[GeV]
+   Momentum: 9.978781068257e-11[GeV], y: -7.627088297734e-11[GeV], z: 2.896771782925e-09[GeV]
+   Total Energy   = 2.8994933379992e-09[GeV]
+   Kinetic Energy = 2.8994933379992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.034415602676097, y: -0.026304900231284, z: 0.99906136874381
+   Total Momentum = 2.8994933379992e-09[GeV]
+   Momentum: 9.978781068257e-11[GeV], y: -7.627088297734e-11[GeV], z: 2.896771782925e-09[GeV]
+   Total Energy   = 2.8994933379992e-09[GeV]
+   Kinetic Energy = 2.8994933379992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.034415602676097, y: -0.026304900231284, z: 0.99906136874381
+   Total Momentum = 2.8994933379992e-09[GeV]
+   Momentum: 9.978781068257e-11[GeV], y: -7.627088297734e-11[GeV], z: 2.896771782925e-09[GeV]
+   Total Energy   = 2.8994933379992e-09[GeV]
+   Kinetic Energy = 2.8994933379992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.034415602676097, y: -0.026304900231284, z: 0.99906136874381
+   Total Momentum = 2.8994933379992e-09[GeV]
+   Momentum: 9.978781068257e-11[GeV], y: -7.627088297734e-11[GeV], z: 2.896771782925e-09[GeV]
+   Total Energy   = 2.8994933379992e-09[GeV]
+   Kinetic Energy = 2.8994933379992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1273.7429565161[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.034415602676097,-0.026304900231284,0.99906136874381)
+ Old Polarization:       (0.79199803013633,-0.60898501988208,-0.043317038441975)
+ New Momentum Direction: (0.034415602676097,-0.026304900231284,0.99906136874381)
+ New Polarization:       (0.79199803013633,-0.60898501988208,-0.043317038441975)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043013174225335, y: 0.0016132999676813, z: 0.99907320257641
+   Total Momentum = 2.426001953489e-09[GeV]
+   Momentum: 1.0435004469643e-10[GeV], y: 3.9138688731586e-12[GeV], z: 2.4237535411289e-09[GeV]
+   Total Energy   = 2.426001953489e-09[GeV]
+   Kinetic Energy = 2.426001953489e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043013174225335, y: 0.0016132999676813, z: 0.99907320257641
+   Total Momentum = 2.426001953489e-09[GeV]
+   Momentum: 1.0435004469643e-10[GeV], y: 3.9138688731586e-12[GeV], z: 2.4237535411289e-09[GeV]
+   Total Energy   = 2.426001953489e-09[GeV]
+   Kinetic Energy = 2.426001953489e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043013174225335, y: 0.0016132999676813, z: 0.99907320257641
+   Total Momentum = 2.426001953489e-09[GeV]
+   Momentum: 1.0435004469643e-10[GeV], y: 3.9138688731586e-12[GeV], z: 2.4237535411289e-09[GeV]
+   Total Energy   = 2.426001953489e-09[GeV]
+   Kinetic Energy = 2.426001953489e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043013174225335, y: 0.0016132999676813, z: 0.99907320257641
+   Total Momentum = 2.426001953489e-09[GeV]
+   Momentum: 1.0435004469643e-10[GeV], y: 3.9138688731586e-12[GeV], z: 2.4237535411289e-09[GeV]
+   Total Energy   = 2.426001953489e-09[GeV]
+   Kinetic Energy = 2.426001953489e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 467.52277953435[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.043013174225335,0.0016132999676813,0.99907320257641)
+ Old Polarization:       (0.99844631383761,0.035386867007643,-0.043043327328011)
+ New Momentum Direction: (0.043013174225335,0.0016132999676813,0.99907320257641)
+ New Polarization:       (0.99844631383761,0.035386867007643,-0.043043327328011)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.044007645414262, y: 0.0075465704115027, z: 0.99900269089734
+   Total Momentum = 4.664709869932e-09[GeV]
+   Momentum: -2.0528289791638e-10[GeV], y: 3.5202561482673e-11[GeV], z: 4.6600577123174e-09[GeV]
+   Total Energy   = 4.664709869932e-09[GeV]
+   Kinetic Energy = 4.664709869932e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.044007645414262, y: 0.0075465704115027, z: 0.99900269089734
+   Total Momentum = 4.664709869932e-09[GeV]
+   Momentum: -2.0528289791638e-10[GeV], y: 3.5202561482673e-11[GeV], z: 4.6600577123174e-09[GeV]
+   Total Energy   = 4.664709869932e-09[GeV]
+   Kinetic Energy = 4.664709869932e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.044007645414262, y: 0.0075465704115027, z: 0.99900269089734
+   Total Momentum = 4.664709869932e-09[GeV]
+   Momentum: -2.0528289791638e-10[GeV], y: 3.5202561482673e-11[GeV], z: 4.6600577123174e-09[GeV]
+   Total Energy   = 4.664709869932e-09[GeV]
+   Kinetic Energy = 4.664709869932e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.044007645414262, y: 0.0075465704115027, z: 0.99900269089734
+   Total Momentum = 4.664709869932e-09[GeV]
+   Momentum: -2.0528289791638e-10[GeV], y: 3.5202561482673e-11[GeV], z: 4.6600577123174e-09[GeV]
+   Total Energy   = 4.664709869932e-09[GeV]
+   Kinetic Energy = 4.664709869932e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1059.7273914768[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.044007645414262,0.0075465704115027,0.99900269089734)
+ Old Polarization:       (-0.98502446168961,0.16653287148184,-0.044649889015627)
+ New Momentum Direction: (-0.044007645414262,0.0075465704115027,0.99900269089734)
+ New Polarization:       (-0.98502446168961,0.16653287148184,-0.044649889015627)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.044131758096074, y: -0.0053700259971183, z: 0.99901128659697
+   Total Momentum = 4.3256500269743e-09[GeV]
+   Momentum: 1.908985405987e-10[GeV], y: -2.3228853099287e-11[GeV], z: 4.3213731988158e-09[GeV]
+   Total Energy   = 4.3256500269743e-09[GeV]
+   Kinetic Energy = 4.3256500269743e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.044131758096074, y: -0.0053700259971183, z: 0.99901128659697
+   Total Momentum = 4.3256500269743e-09[GeV]
+   Momentum: 1.908985405987e-10[GeV], y: -2.3228853099287e-11[GeV], z: 4.3213731988158e-09[GeV]
+   Total Energy   = 4.3256500269743e-09[GeV]
+   Kinetic Energy = 4.3256500269743e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.044131758096074, y: -0.0053700259971183, z: 0.99901128659697
+   Total Momentum = 4.3256500269743e-09[GeV]
+   Momentum: 1.908985405987e-10[GeV], y: -2.3228853099287e-11[GeV], z: 4.3213731988158e-09[GeV]
+   Total Energy   = 4.3256500269743e-09[GeV]
+   Kinetic Energy = 4.3256500269743e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.044131758096074, y: -0.0053700259971183, z: 0.99901128659697
+   Total Momentum = 4.3256500269743e-09[GeV]
+   Momentum: 1.908985405987e-10[GeV], y: -2.3228853099287e-11[GeV], z: 4.3213731988158e-09[GeV]
+   Total Energy   = 4.3256500269743e-09[GeV]
+   Kinetic Energy = 4.3256500269743e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 281.9435211518[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.044131758096074,-0.0053700259971183,0.99901128659697)
+ Old Polarization:       (0.99141571760081,-0.12295704991748,-0.044457156562944)
+ New Momentum Direction: (0.044131758096074,-0.0053700259971183,0.99901128659697)
+ New Polarization:       (0.99141571760081,-0.12295704991748,-0.044457156562944)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.028064005113252, y: 0.033525197192609, z: 0.999043779206
+   Total Momentum = 3.5882435050901e-09[GeV]
+   Momentum: -1.0070048407444e-10[GeV], y: 1.2029657108324e-10[GeV], z: 3.5848123520365e-09[GeV]
+   Total Energy   = 3.5882435050901e-09[GeV]
+   Kinetic Energy = 3.5882435050901e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.028064005113252, y: 0.033525197192609, z: 0.999043779206
+   Total Momentum = 3.5882435050901e-09[GeV]
+   Momentum: -1.0070048407444e-10[GeV], y: 1.2029657108324e-10[GeV], z: 3.5848123520365e-09[GeV]
+   Total Energy   = 3.5882435050901e-09[GeV]
+   Kinetic Energy = 3.5882435050901e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.028064005113252, y: 0.033525197192609, z: 0.999043779206
+   Total Momentum = 3.5882435050901e-09[GeV]
+   Momentum: -1.0070048407444e-10[GeV], y: 1.2029657108324e-10[GeV], z: 3.5848123520365e-09[GeV]
+   Total Energy   = 3.5882435050901e-09[GeV]
+   Kinetic Energy = 3.5882435050901e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.028064005113252, y: 0.033525197192609, z: 0.999043779206
+   Total Momentum = 3.5882435050901e-09[GeV]
+   Momentum: -1.0070048407444e-10[GeV], y: 1.2029657108324e-10[GeV], z: 3.5848123520365e-09[GeV]
+   Total Energy   = 3.5882435050901e-09[GeV]
+   Kinetic Energy = 3.5882435050901e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 774.21101381366[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.028064005113252,0.033525197192609,0.999043779206)
+ Old Polarization:       (-0.64363889895643,0.76407948457132,-0.043720807487732)
+ New Momentum Direction: (-0.028064005113252,0.033525197192609,0.999043779206)
+ New Polarization:       (-0.64363889895643,0.76407948457132,-0.043720807487732)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042373441415004, y: 0.009969200466849, z: 0.99905210399894
+   Total Momentum = 3.0960666179733e-09[GeV]
+   Momentum: 1.3119099745364e-10[GeV], y: 3.0865308773295e-11[GeV], z: 3.0931318688071e-09[GeV]
+   Total Energy   = 3.0960666179733e-09[GeV]
+   Kinetic Energy = 3.0960666179733e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042373441415004, y: 0.009969200466849, z: 0.99905210399894
+   Total Momentum = 3.0960666179733e-09[GeV]
+   Momentum: 1.3119099745364e-10[GeV], y: 3.0865308773295e-11[GeV], z: 3.0931318688071e-09[GeV]
+   Total Energy   = 3.0960666179733e-09[GeV]
+   Kinetic Energy = 3.0960666179733e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042373441415004, y: 0.009969200466849, z: 0.99905210399894
+   Total Momentum = 3.0960666179733e-09[GeV]
+   Momentum: 1.3119099745364e-10[GeV], y: 3.0865308773295e-11[GeV], z: 3.0931318688071e-09[GeV]
+   Total Energy   = 3.0960666179733e-09[GeV]
+   Kinetic Energy = 3.0960666179733e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042373441415004, y: 0.009969200466849, z: 0.99905210399894
+   Total Momentum = 3.0960666179733e-09[GeV]
+   Momentum: 1.3119099745364e-10[GeV], y: 3.0865308773295e-11[GeV], z: 3.0931318688071e-09[GeV]
+   Total Energy   = 3.0960666179733e-09[GeV]
+   Kinetic Energy = 3.0960666179733e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 856.57594407333[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.042373441415004,0.009969200466849,0.99905210399894)
+ Old Polarization:       (0.97284378014393,0.22733255430076,-0.043530324951291)
+ New Momentum Direction: (0.042373441415004,0.009969200466849,0.99905210399894)
+ New Polarization:       (0.97284378014393,0.22733255430076,-0.043530324951291)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.014753901413661, y: -0.040194194531885, z: 0.99908295407289
+   Total Momentum = 2.1938324325581e-09[GeV]
+   Momentum: 3.2367587428055e-11[GeV], y: -8.8179327564599e-11[GeV], z: 2.1918205874611e-09[GeV]
+   Total Energy   = 2.1938324325581e-09[GeV]
+   Kinetic Energy = 2.1938324325581e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.014753901413661, y: -0.040194194531885, z: 0.99908295407289
+   Total Momentum = 2.1938324325581e-09[GeV]
+   Momentum: 3.2367587428055e-11[GeV], y: -8.8179327564599e-11[GeV], z: 2.1918205874611e-09[GeV]
+   Total Energy   = 2.1938324325581e-09[GeV]
+   Kinetic Energy = 2.1938324325581e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.014753901413661, y: -0.040194194531885, z: 0.99908295407289
+   Total Momentum = 2.1938324325581e-09[GeV]
+   Momentum: 3.2367587428055e-11[GeV], y: -8.8179327564599e-11[GeV], z: 2.1918205874611e-09[GeV]
+   Total Energy   = 2.1938324325581e-09[GeV]
+   Kinetic Energy = 2.1938324325581e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.014753901413661, y: -0.040194194531885, z: 0.99908295407289
+   Total Momentum = 2.1938324325581e-09[GeV]
+   Momentum: 3.2367587428055e-11[GeV], y: -8.8179327564599e-11[GeV], z: 2.1918205874611e-09[GeV]
+   Total Energy   = 2.1938324325581e-09[GeV]
+   Kinetic Energy = 2.1938324325581e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 643.43211522819[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.014753901413661,-0.040194194531885,0.99908295407289)
+ Old Polarization:       (0.3415255127917,-0.93889674025855,-0.042816296479584)
+ New Momentum Direction: (0.014753901413661,-0.040194194531885,0.99908295407289)
+ New Polarization:       (0.3415255127917,-0.93889674025855,-0.042816296479584)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.036035650452308, y: -0.025977695444745, z: 0.99901280834425
+   Total Momentum = 4.3508030575428e-09[GeV]
+   Momentum: 1.5678401816844e-10[GeV], y: -1.1302383676891e-10[GeV], z: 4.3465079810685e-09[GeV]
+   Total Energy   = 4.3508030575428e-09[GeV]
+   Kinetic Energy = 4.3508030575428e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.036035650452308, y: -0.025977695444745, z: 0.99901280834425
+   Total Momentum = 4.3508030575428e-09[GeV]
+   Momentum: 1.5678401816844e-10[GeV], y: -1.1302383676891e-10[GeV], z: 4.3465079810685e-09[GeV]
+   Total Energy   = 4.3508030575428e-09[GeV]
+   Kinetic Energy = 4.3508030575428e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.036035650452308, y: -0.025977695444745, z: 0.99901280834425
+   Total Momentum = 4.3508030575428e-09[GeV]
+   Momentum: 1.5678401816844e-10[GeV], y: -1.1302383676891e-10[GeV], z: 4.3465079810685e-09[GeV]
+   Total Energy   = 4.3508030575428e-09[GeV]
+   Kinetic Energy = 4.3508030575428e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.036035650452308, y: -0.025977695444745, z: 0.99901280834425
+   Total Momentum = 4.3508030575428e-09[GeV]
+   Momentum: 1.5678401816844e-10[GeV], y: -1.1302383676891e-10[GeV], z: 4.3465079810685e-09[GeV]
+   Total Energy   = 4.3508030575428e-09[GeV]
+   Kinetic Energy = 4.3508030575428e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 2149.3345282286[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.036035650452308,-0.025977695444745,0.99901280834425)
+ Old Polarization:       (0.80864751630178,-0.58661384495679,-0.044422868930069)
+ New Momentum Direction: (0.036035650452308,-0.025977695444745,0.99901280834425)
+ New Polarization:       (0.80864751630178,-0.58661384495679,-0.044422868930069)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.042406228389699, y: 0.010023580912036, z: 0.99905016872
+   Total Momentum = 3.5028602955767e-09[GeV]
+   Momentum: -1.4854309371143e-10[GeV], y: 3.5111203596269e-11[GeV], z: 3.4995331692985e-09[GeV]
+   Total Energy   = 3.5028602955767e-09[GeV]
+   Kinetic Energy = 3.5028602955767e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.042406228389699, y: 0.010023580912036, z: 0.99905016872
+   Total Momentum = 3.5028602955767e-09[GeV]
+   Momentum: -1.4854309371143e-10[GeV], y: 3.5111203596269e-11[GeV], z: 3.4995331692985e-09[GeV]
+   Total Energy   = 3.5028602955767e-09[GeV]
+   Kinetic Energy = 3.5028602955767e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.042406228389699, y: 0.010023580912036, z: 0.99905016872
+   Total Momentum = 3.5028602955767e-09[GeV]
+   Momentum: -1.4854309371143e-10[GeV], y: 3.5111203596269e-11[GeV], z: 3.4995331692985e-09[GeV]
+   Total Energy   = 3.5028602955767e-09[GeV]
+   Kinetic Energy = 3.5028602955767e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.042406228389699, y: 0.010023580912036, z: 0.99905016872
+   Total Momentum = 3.5028602955767e-09[GeV]
+   Momentum: -1.4854309371143e-10[GeV], y: 3.5111203596269e-11[GeV], z: 3.4995331692985e-09[GeV]
+   Total Energy   = 3.5028602955767e-09[GeV]
+   Kinetic Energy = 3.5028602955767e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1421.6229380969[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.042406228389699,0.010023580912036,0.99905016872)
+ Old Polarization:       (-0.9728423304838,0.22733027073266,-0.043574625958857)
+ New Momentum Direction: (-0.042406228389699,0.010023580912036,0.99905016872)
+ New Polarization:       (-0.9728423304838,0.22733027073266,-0.043574625958857)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.041146243070646, y: -0.017623286046255, z: 0.99899770093334
+   Total Momentum = 4.71336325566e-09[GeV]
+   Momentum: -1.9393719019764e-10[GeV], y: -8.3064948894403e-11[GeV], z: 4.708639056068e-09[GeV]
+   Total Energy   = 4.71336325566e-09[GeV]
+   Kinetic Energy = 4.71336325566e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.041146243070646, y: -0.017623286046255, z: 0.99899770093334
+   Total Momentum = 4.71336325566e-09[GeV]
+   Momentum: -1.9393719019764e-10[GeV], y: -8.3064948894403e-11[GeV], z: 4.708639056068e-09[GeV]
+   Total Energy   = 4.71336325566e-09[GeV]
+   Kinetic Energy = 4.71336325566e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.041146243070646, y: -0.017623286046255, z: 0.99899770093334
+   Total Momentum = 4.71336325566e-09[GeV]
+   Momentum: -1.9393719019764e-10[GeV], y: -8.3064948894403e-11[GeV], z: 4.708639056068e-09[GeV]
+   Total Energy   = 4.71336325566e-09[GeV]
+   Kinetic Energy = 4.71336325566e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.041146243070646, y: -0.017623286046255, z: 0.99899770093334
+   Total Momentum = 4.71336325566e-09[GeV]
+   Momentum: -1.9393719019764e-10[GeV], y: -8.3064948894403e-11[GeV], z: 4.708639056068e-09[GeV]
+   Total Energy   = 4.71336325566e-09[GeV]
+   Kinetic Energy = 4.71336325566e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1368.4900579848[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.041146243070646,-0.017623286046255,0.99899770093334)
+ Old Polarization:       (-0.91807128860718,-0.39388007851116,-0.04476151010854)
+ New Momentum Direction: (-0.041146243070646,-0.017623286046255,0.99899770093334)
+ New Polarization:       (-0.91807128860718,-0.39388007851116,-0.04476151010854)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.022806804938373, y: -0.036265861065271, z: 0.99908189702832
+   Total Momentum = 2.1657972431469e-09[GeV]
+   Momentum: 4.9394915260516e-11[GeV], y: -7.8544501915512e-11[GeV], z: 2.1638088182619e-09[GeV]
+   Total Energy   = 2.1657972431469e-09[GeV]
+   Kinetic Energy = 2.1657972431469e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.022806804938373, y: -0.036265861065271, z: 0.99908189702832
+   Total Momentum = 2.1657972431469e-09[GeV]
+   Momentum: 4.9394915260516e-11[GeV], y: -7.8544501915512e-11[GeV], z: 2.1638088182619e-09[GeV]
+   Total Energy   = 2.1657972431469e-09[GeV]
+   Kinetic Energy = 2.1657972431469e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.022806804938373, y: -0.036265861065271, z: 0.99908189702832
+   Total Momentum = 2.1657972431469e-09[GeV]
+   Momentum: 4.9394915260516e-11[GeV], y: -7.8544501915512e-11[GeV], z: 2.1638088182619e-09[GeV]
+   Total Energy   = 2.1657972431469e-09[GeV]
+   Kinetic Energy = 2.1657972431469e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.022806804938373, y: -0.036265861065271, z: 0.99908189702832
+   Total Momentum = 2.1657972431469e-09[GeV]
+   Momentum: 4.9394915260516e-11[GeV], y: -7.8544501915512e-11[GeV], z: 2.1638088182619e-09[GeV]
+   Total Energy   = 2.1657972431469e-09[GeV]
+   Kinetic Energy = 2.1657972431469e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 43.629126852003[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.022806804938373,-0.036265861065271,0.99908189702832)
+ Old Polarization:       (0.53181868431155,-0.84577392014254,-0.042841137051432)
+ New Momentum Direction: (0.022806804938373,-0.036265861065271,0.99908189702832)
+ New Polarization:       (0.53181868431155,-0.84577392014254,-0.042841137051432)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042540945863524, y: -0.014992345686488, z: 0.99898223082088
+   Total Momentum = 4.9956620272402e-09[GeV]
+   Momentum: 2.1252018785329e-10[GeV], y: -7.4896692045248e-11[GeV], z: 4.9905775963996e-09[GeV]
+   Total Energy   = 4.9956620272402e-09[GeV]
+   Kinetic Energy = 4.9956620272402e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042540945863524, y: -0.014992345686488, z: 0.99898223082088
+   Total Momentum = 4.9956620272402e-09[GeV]
+   Momentum: 2.1252018785329e-10[GeV], y: -7.4896692045248e-11[GeV], z: 4.9905775963996e-09[GeV]
+   Total Energy   = 4.9956620272402e-09[GeV]
+   Kinetic Energy = 4.9956620272402e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042540945863524, y: -0.014992345686488, z: 0.99898223082088
+   Total Momentum = 4.9956620272402e-09[GeV]
+   Momentum: 2.1252018785329e-10[GeV], y: -7.4896692045248e-11[GeV], z: 4.9905775963996e-09[GeV]
+   Total Energy   = 4.9956620272402e-09[GeV]
+   Kinetic Energy = 4.9956620272402e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.042540945863524, y: -0.014992345686488, z: 0.99898223082088
+   Total Momentum = 4.9956620272402e-09[GeV]
+   Momentum: 2.1252018785329e-10[GeV], y: -7.4896692045248e-11[GeV], z: 4.9905775963996e-09[GeV]
+   Total Energy   = 4.9956620272402e-09[GeV]
+   Kinetic Energy = 4.9956620272402e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 3434.6143070716[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.042540945863524,-0.014992345686488,0.99898223082088)
+ Old Polarization:       (0.94204535939322,-0.3324395263741,-0.045105455876986)
+ New Momentum Direction: (0.042540945863524,-0.014992345686488,0.99898223082088)
+ New Polarization:       (0.94204535939322,-0.3324395263741,-0.045105455876986)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.0019110854332712, y: 0.046572384816047, z: 0.99891308967548
+   Total Momentum = 6.0014842307992e-09[GeV]
+   Momentum: 1.1469349091487e-11[GeV], y: 2.7950343306422e-10[GeV], z: 5.9949611556263e-09[GeV]
+   Total Energy   = 6.0014842307992e-09[GeV]
+   Kinetic Energy = 6.0014842307992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.0019110854332712, y: 0.046572384816047, z: 0.99891308967548
+   Total Momentum = 6.0014842307992e-09[GeV]
+   Momentum: 1.1469349091487e-11[GeV], y: 2.7950343306422e-10[GeV], z: 5.9949611556263e-09[GeV]
+   Total Energy   = 6.0014842307992e-09[GeV]
+   Kinetic Energy = 6.0014842307992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.0019110854332712, y: 0.046572384816047, z: 0.99891308967548
+   Total Momentum = 6.0014842307992e-09[GeV]
+   Momentum: 1.1469349091487e-11[GeV], y: 2.7950343306422e-10[GeV], z: 5.9949611556263e-09[GeV]
+   Total Energy   = 6.0014842307992e-09[GeV]
+   Kinetic Energy = 6.0014842307992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.0019110854332712, y: 0.046572384816047, z: 0.99891308967548
+   Total Momentum = 6.0014842307992e-09[GeV]
+   Momentum: 1.1469349091487e-11[GeV], y: 2.7950343306422e-10[GeV], z: 5.9949611556263e-09[GeV]
+   Total Energy   = 6.0014842307992e-09[GeV]
+   Kinetic Energy = 6.0014842307992e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 639.80943797004[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.0019110854332712,0.046572384816047,0.99891308967548)
+ Old Polarization:       (0.041222477415665,0.99806215649911,-0.046611577103318)
+ New Momentum Direction: (0.0019110854332712,0.046572384816047,0.99891308967548)
+ New Polarization:       (0.041222477415665,0.99806215649911,-0.046611577103318)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.03510176710736, y: -0.029029354349206, z: 0.99896204258821
+   Total Momentum = 5.3031900130747e-09[GeV]
+   Momentum: 1.8615134076503e-10[GeV], y: -1.5394818207071e-10[GeV], z: 5.2976855276944e-09[GeV]
+   Total Energy   = 5.3031900130747e-09[GeV]
+   Kinetic Energy = 5.3031900130747e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.03510176710736, y: -0.029029354349206, z: 0.99896204258821
+   Total Momentum = 5.3031900130747e-09[GeV]
+   Momentum: 1.8615134076503e-10[GeV], y: -1.5394818207071e-10[GeV], z: 5.2976855276944e-09[GeV]
+   Total Energy   = 5.3031900130747e-09[GeV]
+   Kinetic Energy = 5.3031900130747e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.03510176710736, y: -0.029029354349206, z: 0.99896204258821
+   Total Momentum = 5.3031900130747e-09[GeV]
+   Momentum: 1.8615134076503e-10[GeV], y: -1.5394818207071e-10[GeV], z: 5.2976855276944e-09[GeV]
+   Total Energy   = 5.3031900130747e-09[GeV]
+   Kinetic Energy = 5.3031900130747e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.03510176710736, y: -0.029029354349206, z: 0.99896204258821
+   Total Momentum = 5.3031900130747e-09[GeV]
+   Momentum: 1.8615134076503e-10[GeV], y: -1.5394818207071e-10[GeV], z: 5.2976855276944e-09[GeV]
+   Total Energy   = 5.3031900130747e-09[GeV]
+   Kinetic Energy = 5.3031900130747e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 154.59131471983[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.03510176710736,-0.029029354349206,0.99896204258821)
+ Old Polarization:       (0.76962157619445,-0.63687345067721,-0.045550381760045)
+ New Momentum Direction: (0.03510176710736,-0.029029354349206,0.99896204258821)
+ New Polarization:       (0.76962157619445,-0.63687345067721,-0.045550381760045)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.039896622245998, y: -0.015626721459827, z: 0.99908161083556
+   Total Momentum = 2.2446827314379e-09[GeV]
+   Momentum: 8.9555258998293e-11[GeV], y: -3.5077031809865e-11[GeV], z: 2.2426212391398e-09[GeV]
+   Total Energy   = 2.2446827314379e-09[GeV]
+   Kinetic Energy = 2.2446827314379e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.039896622245998, y: -0.015626721459827, z: 0.99908161083556
+   Total Momentum = 2.2446827314379e-09[GeV]
+   Momentum: 8.9555258998293e-11[GeV], y: -3.5077031809865e-11[GeV], z: 2.2426212391398e-09[GeV]
+   Total Energy   = 2.2446827314379e-09[GeV]
+   Kinetic Energy = 2.2446827314379e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.039896622245998, y: -0.015626721459827, z: 0.99908161083556
+   Total Momentum = 2.2446827314379e-09[GeV]
+   Momentum: 8.9555258998293e-11[GeV], y: -3.5077031809865e-11[GeV], z: 2.2426212391398e-09[GeV]
+   Total Energy   = 2.2446827314379e-09[GeV]
+   Kinetic Energy = 2.2446827314379e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.039896622245998, y: -0.015626721459827, z: 0.99908161083556
+   Total Momentum = 2.2446827314379e-09[GeV]
+   Momentum: 8.9555258998293e-11[GeV], y: -3.5077031809865e-11[GeV], z: 2.2426212391398e-09[GeV]
+   Total Energy   = 2.2446827314379e-09[GeV]
+   Kinetic Energy = 2.2446827314379e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1633.1719202622[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.039896622245998,-0.015626721459827,0.99908161083556)
+ Old Polarization:       (0.93008801874423,-0.36482919695217,-0.04284780554088)
+ New Momentum Direction: (0.039896622245998,-0.015626721459827,0.99908161083556)
+ New Polarization:       (0.93008801874423,-0.36482919695217,-0.04284780554088)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.024777467603665, y: 0.037341727999176, z: 0.99899533154524
+   Total Momentum = 4.7280635329899e-09[GeV]
+   Momentum: -1.1714944101673e-10[GeV], y: 1.7655406241173e-10[GeV], z: 4.7233133967063e-09[GeV]
+   Total Energy   = 4.7280635329899e-09[GeV]
+   Kinetic Energy = 4.7280635329899e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.024777467603665, y: 0.037341727999176, z: 0.99899533154524
+   Total Momentum = 4.7280635329899e-09[GeV]
+   Momentum: -1.1714944101673e-10[GeV], y: 1.7655406241173e-10[GeV], z: 4.7233133967063e-09[GeV]
+   Total Energy   = 4.7280635329899e-09[GeV]
+   Kinetic Energy = 4.7280635329899e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.024777467603665, y: 0.037341727999176, z: 0.99899533154524
+   Total Momentum = 4.7280635329899e-09[GeV]
+   Momentum: -1.1714944101673e-10[GeV], y: 1.7655406241173e-10[GeV], z: 4.7233133967063e-09[GeV]
+   Total Energy   = 4.7280635329899e-09[GeV]
+   Kinetic Energy = 4.7280635329899e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.024777467603665, y: 0.037341727999176, z: 0.99899533154524
+   Total Momentum = 4.7280635329899e-09[GeV]
+   Momentum: -1.1714944101673e-10[GeV], y: 1.7655406241173e-10[GeV], z: 4.7233133967063e-09[GeV]
+   Total Energy   = 4.7280635329899e-09[GeV]
+   Kinetic Energy = 4.7280635329899e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 718.81848840267[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.024777467603665,0.037341727999176,0.99899533154524)
+ Old Polarization:       (-0.5524402677527,0.83234693670737,-0.044814367329853)
+ New Momentum Direction: (-0.024777467603665,0.037341727999176,0.99899533154524)
+ New Polarization:       (-0.5524402677527,0.83234693670737,-0.044814367329853)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043926860712936, y: -0.012275689117348, z: 0.99895932768286
+   Total Momentum = 5.3385925058713e-09[GeV]
+   Momentum: 2.3450760940853e-10[GeV], y: -6.5534901926281e-11[GeV], z: 5.333036780438e-09[GeV]
+   Total Energy   = 5.3385925058713e-09[GeV]
+   Kinetic Energy = 5.3385925058713e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043926860712936, y: -0.012275689117348, z: 0.99895932768286
+   Total Momentum = 5.3385925058713e-09[GeV]
+   Momentum: 2.3450760940853e-10[GeV], y: -6.5534901926281e-11[GeV], z: 5.333036780438e-09[GeV]
+   Total Energy   = 5.3385925058713e-09[GeV]
+   Kinetic Energy = 5.3385925058713e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043926860712936, y: -0.012275689117348, z: 0.99895932768286
+   Total Momentum = 5.3385925058713e-09[GeV]
+   Momentum: 2.3450760940853e-10[GeV], y: -6.5534901926281e-11[GeV], z: 5.333036780438e-09[GeV]
+   Total Energy   = 5.3385925058713e-09[GeV]
+   Kinetic Energy = 5.3385925058713e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.043926860712936, y: -0.012275689117348, z: 0.99895932768286
+   Total Momentum = 5.3385925058713e-09[GeV]
+   Momentum: 2.3450760940853e-10[GeV], y: -6.5534901926281e-11[GeV], z: 5.333036780438e-09[GeV]
+   Total Energy   = 5.3385925058713e-09[GeV]
+   Kinetic Energy = 5.3385925058713e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 110.93894785324[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.043926860712936,-0.012275689117348,0.99895932768286)
+ Old Polarization:       (0.96196037739333,-0.2693547312138,-0.045609879390658)
+ New Momentum Direction: (0.043926860712936,-0.012275689117348,0.99895932768286)
+ New Polarization:       (0.96196037739333,-0.2693547312138,-0.045609879390658)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.022527157500516, y: 0.036420872414375, z: 0.99908260280495
+   Total Momentum = 2.0486830790983e-09[GeV]
+   Momentum: -4.6151006391491e-11[GeV], y: 7.4614825041329e-11[GeV], z: 2.046803622988e-09[GeV]
+   Total Energy   = 2.0486830790983e-09[GeV]
+   Kinetic Energy = 2.0486830790983e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.022527157500516, y: 0.036420872414375, z: 0.99908260280495
+   Total Momentum = 2.0486830790983e-09[GeV]
+   Momentum: -4.6151006391491e-11[GeV], y: 7.4614825041329e-11[GeV], z: 2.046803622988e-09[GeV]
+   Total Energy   = 2.0486830790983e-09[GeV]
+   Kinetic Energy = 2.0486830790983e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.022527157500516, y: 0.036420872414375, z: 0.99908260280495
+   Total Momentum = 2.0486830790983e-09[GeV]
+   Momentum: -4.6151006391491e-11[GeV], y: 7.4614825041329e-11[GeV], z: 2.046803622988e-09[GeV]
+   Total Energy   = 2.0486830790983e-09[GeV]
+   Kinetic Energy = 2.0486830790983e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: -0.022527157500516, y: 0.036420872414375, z: 0.99908260280495
+   Total Momentum = 2.0486830790983e-09[GeV]
+   Momentum: -4.6151006391491e-11[GeV], y: 7.4614825041329e-11[GeV], z: 2.046803622988e-09[GeV]
+   Total Energy   = 2.0486830790983e-09[GeV]
+   Kinetic Energy = 2.0486830790983e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 325.3453159118[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (-0.022527157500516,0.036420872414375,0.99908260280495)
+ Old Polarization:       (-0.52564289913017,0.84962673559841,-0.042824674551117)
+ New Momentum Direction: (-0.022527157500516,0.036420872414375,0.99908260280495)
+ New Polarization:       (-0.52564289913017,0.84962673559841,-0.042824674551117)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpBoundary]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.033445334974764, y: -0.027445397002669, z: 0.99906364149227
+   Total Momentum = 2.8382814497004e-09[GeV]
+   Momentum: 9.492727383789e-11[GeV], y: -7.789776119234e-11[GeV], z: 2.8356238007177e-09[GeV]
+   Total Energy   = 2.8382814497004e-09[GeV]
+   Kinetic Energy = 2.8382814497004e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpMieHG]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.033445334974764, y: -0.027445397002669, z: 0.99906364149227
+   Total Momentum = 2.8382814497004e-09[GeV]
+   Momentum: 9.492727383789e-11[GeV], y: -7.789776119234e-11[GeV], z: 2.8356238007177e-09[GeV]
+   Total Energy   = 2.8382814497004e-09[GeV]
+   Kinetic Energy = 2.8382814497004e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpRayleigh]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.033445334974764, y: -0.027445397002669, z: 0.99906364149227
+   Total Momentum = 2.8382814497004e-09[GeV]
+   Momentum: 9.492727383789e-11[GeV], y: -7.789776119234e-11[GeV], z: 2.8356238007177e-09[GeV]
+   Total Energy   = 2.8382814497004e-09[GeV]
+   Kinetic Energy = 2.8382814497004e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1.7976931348623e+307[cm] 
+G4VDiscreteProcess::PostStepGetPhysicalInteractionLength() - [ OpAbsorption]
+ Particle type - opticalphoton
+   mass:        0[GeV]
+   charge:      0[e]
+   Direction x: 0.033445334974764, y: -0.027445397002669, z: 0.99906364149227
+   Total Momentum = 2.8382814497004e-09[GeV]
+   Momentum: 9.492727383789e-11[GeV], y: -7.789776119234e-11[GeV], z: 2.8356238007177e-09[GeV]
+   Total Energy   = 2.8382814497004e-09[GeV]
+   Kinetic Energy = 2.8382814497004e-09[GeV]
+ MagneticMoment  [MeV/T]: 0
+   ProperTime     = 0[ns]
+ in Material  C4F10_PFRICH
+InteractionLength= 1031.440224079[cm] 
+ Photon at Boundary! 
+ thePrePV:  gasvol_0
+ thePostPV: myworld_0
+ Old Momentum Direction: (0.033445334974764,-0.027445397002669,0.99906364149227)
+ Old Polarization:       (0.77231472211063,-0.63376504302697,-0.043264769133884)
+ New Momentum Direction: (0.033445334974764,-0.027445397002669,0.99906364149227)
+ New Polarization:       (0.77231472211063,-0.63376504302697,-0.043264769133884)
+ *** Detection ***
+SimpleDetectorHandler ERROR +++++ WRONG!!! Extract. How did we get here?
+GenerationInit   WARN  +++ Finished run 0 after 1 events (1 events in total)
+
+Geant4Kernel     INFO  ++ Terminate Geant4 and delete associated actions.
+DDSim            INFO DDSim            INFO  Total Time:   4.54 s (User), 0.30 s (System)
+DDSim            INFO DDSim            INFO  StartUp Time: 3.59 s, Event Processing: 0.95 s (0.95 s/Event) 
+DDSim            INFO TEST: passed
+RootOutput       INFO  +++ Closing ROOT output file sim.root
