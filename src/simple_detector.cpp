@@ -17,15 +17,14 @@ static Ref_t createDetector(Detector &desc, xml::Handle_t handle, SensitiveDetec
     DetElement det(detName, detID);
     sens.setType("tracker");
 
-    // We define our own mother volume (vacuum)
-    // that will be inside of world (made of air)
+    // Define the radiator gas
     Box gasShape(19 * cm / 2.,
                  19 * cm / 2.,
                  19 * cm / 2.);
     Volume gasVol("gasvol", gasShape, desc.material("C4F10_PFRICH"));
-    gasVol.setVisAttributes(desc.visAttributes("cooling_vis"));
-//       gasVol.setSensitiveDetector(sens);
+    gasVol.setVisAttributes(desc.visAttributes("gas_vis"));
 
+    // define the sensor, to be placed inside the gas
     Box sensorShape(9 * cm / 2.,
                     9 * cm / 2.,
                     1 * cm / 2.);
@@ -34,32 +33,34 @@ static Ref_t createDetector(Detector &desc, xml::Handle_t handle, SensitiveDetec
     sensorVol.setSensitiveDetector(sens);
 
 
-    // Place our mother volume in the world
-    Volume wVol = desc.pickMotherVolume(det);
-    wVol.setVisAttributes(desc.visAttributes("no_vis"));
+
+    // place the sensor inside the gas
     auto sensorPV = gasVol.placeVolume(sensorVol, Position(0,0,8.5*cm));
     sensorPV.addPhysVolID("system", 123);
-    // // Make sensor sensitive + define optical properties
     DetElement sensorDE(det, "ARC_sensor", 127);
     sensorDE.setPlacement(sensorPV);
-    OpticalSurfaceManager surfMgr = desc.surfaceManager();
 
+    // get the world volume
+    Volume wVol = desc.pickMotherVolume(det);
+    wVol.setVisAttributes(desc.visAttributes("no_vis"));
+
+    // place the gas inside the world
+    PlacedVolume gasPV = wVol.placeVolume(gasVol);
+    gasPV.addPhysVolID("system", detID);
+    det.setPlacement(gasPV);
+
+    OpticalSurfaceManager surfMgr = desc.surfaceManager();
     auto sensorSurf = surfMgr.opticalSurface("SensorSurface_PFRICH");
 
-//     SkinSurface sensorSkin(desc, sensorDE, "sensor_optical_surface", sensorSurf, sensorVol); // FIXME: 3rd arg needs `imod`?
-//     sensorSkin.isValid();
+    // Define a skin...
+    SkinSurface sensorSkin(desc, sensorDE, "sensor_optical_surface", sensorSurf, sensorVol); // FIXME: 3rd arg needs `imod`?
+    sensorSkin.isValid();
 
+    // ... or a border, same result
+    // BorderSurface sensorBorder(desc, sensorDE, "sensor_optical_surface", sensorSurf, gasPV, sensorPV);
+    // sensorBorder.isValid();
 
-
-    PlacedVolume mPV = wVol.placeVolume(gasVol, Position(0, 0, 0*cm));
-    BorderSurface sensorBorder(desc, sensorDE, "sensor_optical_surface", sensorSurf, mPV, sensorPV);
-    sensorBorder.isValid();
-    // Assign the system ID to our mother volume
-    mPV.addPhysVolID("system", detID);
-
-    // Set the physical volumes of the detector element.
-    det.setPlacement(mPV);
     return det;
 }
 
-DECLARE_DETELEMENT(MYTELESCOPE, createDetector)
+DECLARE_DETELEMENT(MYDETECTOR, createDetector)

@@ -37,12 +37,10 @@ if __name__ == "__main__":
         cerenkov.enableUI()
         seq.adopt(cerenkov)
 
-
-
         ph = PhysicsList(kernel, "Geant4OpticalPhotonPhysics/OpticalGammaPhys")
         ph.addParticleConstructor("G4OpticalPhoton")
         ph.BoundaryInvokeSD = True
-        ph.VerboseLevel = 0
+        ph.VerboseLevel = 2
         ph.enableUI()
         seq.adopt(ph)
 
@@ -59,10 +57,10 @@ if __name__ == "__main__":
         name="ParticleSelectFilter/OpticalPhotonSelector",
         parameter={"particle": "opticalphoton"},
         )
-    SIM.filter.mapDetFilter["MYTELESCOPE"] = "opticalphotons"
+    SIM.filter.mapDetFilter["MYDETECTOR"] = "opticalphotons"
 
     # Use the optical tracker for the PFRICH
-    SIM.action.mapActions["MYTELESCOPE"] = "Geant4OpticalTrackerAction"
+    SIM.action.mapActions["MYDETECTOR"] = "Geant4OpticalTrackerAction"
 
     # Disable user tracker particle handler, so hits can be associated to photons
     SIM.part.userParticleHandler = ""
@@ -74,13 +72,10 @@ if __name__ == "__main__":
     SIM.gun.energy = "5*GeV"
     SIM.gun.particle = "pi+"
     SIM.gun.direction = "0 0 1"
-    #SIM.gun.thetaMin = "195.0*deg"
-    #SIM.gun.thetaMax = "195.1*deg"
-    #SIM.gun.distribution = "cos(theta)"
     SIM.gun.position = "0 0 0*cm"
 
     # Installed compact file, otherwise assume the user passed `--compactFile`
-    SIM.compactFile = "./compact/simple_telescope.xml"
+    SIM.compactFile = "./compact/simple_detector.xml"
 
     # Output file (assuming CWD)
     SIM.outputFile = "sim.root"

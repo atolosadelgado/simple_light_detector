@@ -13,7 +13,7 @@
 </includes>
 
 <display>
-  <vis name="cooling_vis" r="254/256" g="230/256" b="151/256" alpha="0.1"  showDaughters="true" visible="true" />
+  <vis name="gas_vis"     r="254/256" g="230/256" b="151/256" alpha="0.1"  showDaughters="true" visible="true" />
   <vis name="sensor_vis"  r="255/256" g="0/256"   b="0/256"   alpha="1.0"  showDaughters="true" visible="true" />
   <vis name="no_vis" showDaughters="true" visible="false" />
 </display>
@@ -30,18 +30,17 @@
 <detectors>
   <detector
     id="1"
-    name="TELESCOPE"
-    type="MYTELESCOPE"
+    name="SimpleDetector"
+    type="MYDETECTOR"
     material="Aluminum"
     zpos="0*mm"
-    readout="MYTELESCOPE_HITS"
+    readout="MYDETECTOR_HITS"
     >
     </detector>
 </detectors>
 
 <readouts>
-  <readout name="MYTELESCOPE_HITS">
-    <segmentation type="CartesianGridXY" grid_size_x="9*cm" grid_size_y="9*cm" />
+  <readout name="MYDETECTOR_HITS">
       <id>system:6,side:2,x:16,y:16</id>
   </readout>
 </readouts>
